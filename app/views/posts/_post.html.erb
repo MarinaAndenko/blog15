@@ -1,0 +1,7 @@
+<br>
+  <strong><%= post.name %></strong><br>
+  <%= post.text %><br>
+  <%= link_to 'Show', post %> | 
+  <%= link_to 'Edit', edit_post_path(post) %> | 
+  <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
